@@ -32,16 +32,11 @@ The main maintainer of sharp has [stressed][commment-1] that this is a
 StackBlitz only compatiblity but there is a [task][sharp-3750] including WASM
 support.
 
-I have decided to stick with the traditional sharp library to avoid duck-taping
-a side project.
+The libvips required multi threading and node api (using _dirname) that kept me
+from using the sharp WASM version on CloudFlare
 
 [sharp-wasm]: https://blog.stackblitz.com/posts/bringing-sharp-to-wasm-and-webcontainers/
 [sharp-3522]: https://github.com/lovell/sharp/pull/3522
 [comment-1]: https://github.com/lovell/sharp/pull/3522#issuecomment-1665420973
 [sharp-3750]: https://github.com/lovell/sharp/issues/3750
 
-##
-
-The perspective of setting up a build chain, hosting a docker container on
-ostro.1729.ch is demotivating me. So I will try to switch to the temporary
-version and should I succeed write a small article about it
